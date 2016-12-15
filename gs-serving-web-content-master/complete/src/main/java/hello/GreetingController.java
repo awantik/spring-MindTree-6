@@ -13,11 +13,5 @@ public class GreetingController {
         model.addAttribute("name", name);
         return "greeting";
     }
-    
-    @RequestMapping("/nicegreeting")
-    public String nicegreeting(@RequestParam(value="name", required=false, defaultValue="World") String name, Model model) {
-        model.addAttribute("name", name);
-        return "greeting";
-    }
 
 }
